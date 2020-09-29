@@ -2,14 +2,14 @@ def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
   str = ""
-  rowi = 0 
-    while rowi < src.count do
-      elementi = 0 
-      while elementi < src[rowi].count do 
-        str << src[rowi][elementi] 
-      elementi += 1 
+  row_index = 0 
+    while row_index < src.count do
+      element_index = 0 
+      while element_index < src[row_index].count do 
+        str << src[row_index][element_index] 
+      element_index += 1 
       end
-  rowi += 1 
+  row_index += 1 
 end
 return str 
   
