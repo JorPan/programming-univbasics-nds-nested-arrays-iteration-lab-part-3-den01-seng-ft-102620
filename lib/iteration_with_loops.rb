@@ -6,8 +6,12 @@ def join_nested_strings(src)
     while rowi < src.length do
       elementi = 0 
       while elementi < src[rowi].length do 
-        
-  
+        str << elementi 
+      elementi += 1 
+      end
+  rowi += 1 
+end
+return str 
   
   
 end
